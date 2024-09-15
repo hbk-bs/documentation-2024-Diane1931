@@ -1,17 +1,267 @@
-* {
-  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa,
-    Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,
-    source-sans-pro, sans-serif;
-  font-weight: bold;
-}
+/* General Styling */
 body {
-  margin: 0 auto;
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f8fb;
+    padding: 0 20px;
+    position: relative;
+    padding-top: 60px;
 }
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    width: 70px;
+    height: auto;
+    z-index: 10;
+}
+
+/* Header Styling */
 h1 {
-  font-size: 5vw;
+    font-size: 3em;
+    text-align: left;
+    margin: 20px 0;
+    color: #34495e;
+    position: relative;
+    left: 170px; /* Moves the title 20px to the right */
+    background: linear-gradient(to right, #a29bfe, #74b9ff); /* Gradient background from purple to blue */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text fill color transparent to show gradient */
+    padding: 0 10px; /* Adds some padding for better visibility */
+}
+
+/* Intro Paragraph Styling */
+.intro {
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #2c3e50;
+    max-width: 900px;
+    text-align: left;
+    position: relative;
+    left: 180px; /* Moves the introduction text 20px to the right */
+}
+
+/* Paragraph Styling */
+p {
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #2c3e50;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Project Container */
+.project {
+    background-color: #ffffff;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    border-left: 5px solid #74b9ff;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Change border color on hover */
+.project:hover {
+    border-left: 5px solid #a29bfe; /* Purple color on hover */
+}
+
+/* Project Header */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Project Heading Styling */
+.project h2 {
+    font-size: 2em;
+    color: #0984e3;
+    margin: 0;
+}
+
+/* Project Links */
+a {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Click Me Tooltip */
+a::after {
+    content: 'Click me!';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Show Tooltip on Hover */
+a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a:hover {
+    color: #5e37db;
+}
+
+/* Project Images Container */
+.project-images {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center; /* Center images horizontally */
+}
+
+/* Project Image */
+.project-image {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    top: -2px; /* Move the image up by 2px */
+}
+
+/* Busy Baker Image Styling - Enlarged without hover effect */
+.busy-baker-image {
+    width: 47%; /* Slightly larger size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Dream Assistant Image Styling - Adjustable size */
+.dream-assistant-image {
+    width: 60%; /* Default size; adjust as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d3436;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Rights Text */
+.rights {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 0.9em;
+    color: #636e72;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Initially hide the content with a smooth transition */
+.hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+/* Styling for the Read More button */
+.read-more-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+.read-more-btn:hover {
+    background-color: #5e37db;
+}
+
+/* Media Queries for Responsiveness */
+
+/* iPhone and iPad Portrait */
+@media (max-width: 767px) {
+    .logo {
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 2em;
+        left: 0;
+    }
+
+    .intro, p {
+        font-size: 1em;
+        left: 0;
+        max-width: 100%;
+    }
+
+    .project-image {
+        width: 40%;
+    }
+
+    .busy-baker-image, .dream-assistant-image {
+        width: 80%;
+    }
+
+    .project-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* iPad Landscape and Larger Phones */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        left: 0;
+    }
+
+    .intro, p {
+        font-size: 1.1em;
+        left: 0;
+        max-width: 100%;
+    }
+
+    .project-image {
+        width: 30%;
+    }
+
+    .busy-baker-image, .dream-assistant-image {
+        width: 70%;
+    }
 }
