@@ -265,3 +265,10 @@ footer {
         width: 70%;
     }
 }
+
+/* Styling for subtitles */
+.subtitle {
+    font-weight: bold;
+    margin-top: 20px; /* Optional: add spacing above the subtitle */
+    margin-bottom: 10px; /* Optional: add spacing below the subtitle */
+}
