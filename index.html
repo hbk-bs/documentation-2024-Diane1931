@@ -1,14 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation 2024/25 Mira Jacobson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>make me your own!</h1>
-	<script src="index.js"></script>
+    <!-- Logo Image -->
+    <img src="Images/Logo2.png" alt="Logo" class="logo">
+    
+    <h1>Documentation 2024/2025</h1>
+    <p class="intro">Explore innovative AI-centered projects created in the 'Digital Basics' Visual Communication course at HBK University. 
+        The projects being; <strong>Hairtype Detector</strong>, <strong>Dream Generator</strong> and  <strong>Busy Baker Rabbit</strong>.</p>
+
+    <!-- Project 1 -->
+    <div class="project">
+        <div class="project-content">
+            <div class="project-header">
+                <h2>Google Teachable Machine</h2>
+                <a href="https://hairtypedetector.netlify.app">Hairtype Detector</a>
+            </div>
+            <p>The Hairtype Detector is a Google teachable machine designed to recognize ones hair type based 
+                off of a sketch of ones average hair strand, whilst providing a percentage for the matching
+                 category ranging from straight, wavy, curly, and coily.  </p>
+
+            <!-- Read More Button for Project 1 -->
+            <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+            
+            <!-- Hidden Text and Images for Project 1 -->
+            <div class="hidden-text">
+                <div class="project-images">
+                    <img src="Images/HD Stylus.png" alt="Google Teachable Machine" class="project-image">
+                    <img src="Images/HD Graphic.png" alt="Another Image" class="project-image">
+                </div>
+
+                
+               
+                <p>The Hairtype Detector is a Google AI, which
+                    can be trained to recognize and evaluate images, sounds and movements. 
+                </p>
+
+                <p class="subtitle">The Process</p>
+                    
+                    
+                <p> One of the key parts of the process was the concept itself,
+                    the concept had to be developed in order to execute the plan and 
+                    then be put to the test. Especially since this is an interactive project.
+                    One of the main questions also being, how much the machine must specialize: 
+                    should it only recognise the top hairtypes or should it also be trained to 
+                    recognise the sub categories?
+                     </p>
+
+        
+                <p>
+                    It was agreed that the top four types should suffice before specifying 
+                    any further. Since that would also include introducing those subcategories and 
+                     feeding even more images. Our main goal, being to first see how the machine copes with that
+                      basic information before overwhelming it with more. The main argument there being that there 
+                      is always space afterwards to develop it further. 
+                    The next step was to train the machine, by feeding the machine with
+                     multiple examples of each hairtype category. The examples were made
+                      in Procreate, on an iPad.
+                </p>
+
+                <p>  After establishing the concept itself, the next move was the execution of
+                  plan and the planning of a blueprint: a stylus had to be created, to allow a sketch
+                   to be made in the first place. The percentage had to be generated, 
+                   with the help of an outside program in this case, 
+                   and then displayed after saving the image made on the stylus.
+                   It was also decided that the user must be educated on what a 
+                    hairtype is and given examples on how their sketch could look, 
+                    with the help of a graphic, to avoid confusion, which would be displayed 
+                    and linked to a new page named ‘what is a hairtype?’ 
+                </p>
+
+                <p>The stylus was created with the help of Chat GPT, and so was the brush. 
+                    It was important to stylise the brush in order to match the Procreate 
+                    brush that the examples fed to the machine were created in. 
+                    The rest of the project involved planning and coding the layout and structure of the site.
+                     And making sure that the site is also interactive; inviting the person to sketch 
+                     ahead without having to add any long or big instructions. 
+                     Everything should be visible and text used should be short and clear. 
+                </p>
+                <p class="subtitle">Lessons Learnt</p>
+                <p> When the interface was set and the machine was tried out, it was noticed that the 
+                machine made the simple mistake of categorizing a straight hair strand as curly. 
+                That problem was looked into and it was concluded that the test images had been 
+                mixed up and that a few straight strand images had been fed as curly, since they 
+                had been put into the wrong folder. This was an absolute gotcha moment, a reminder
+                 of how much  a small slip up can influence the results and how things should be run through
+                  multiple times before rushing to complete the project.
+                </p>
+
+
+               
+                <p>  This project really introduced the concept of teaching a machine, and underlined the responsibility
+                 that we carry in this dynamic. We have the responsibility of feeding information to this machine 
+                 that will establish the basis of its response to other information. We must filter out excessive or
+                  confusing information. We are the source of what the machine knows.
+
+              That put aside; the machine did manage to recognise the procreate images even though the brush
+             was a bit different. Which highlighted its intelligence and the fact that  
+             not everything had to be taught bit by bit. The key point being that both parties 
+            play a very important role and rely on eachother to function in this scenario. </p>
+               
+            <p>This is a very relevant skill and component to consider when working in 
+            the field of design. We teach the machine to work with and process what 
+            it's given by the user and the machine then takes what it is taught and 
+            spits out a result accordingly and in a way that the user can comprehend.
+            We then make sure that those values are truely comprehendable by 
+            adjusting how it is displayed. As mentioned before: both parties work hand in hand.</p>
+
+            <p class="subtitle">Potential Development</p>
+
+            <p>The Hairtype Detector could be developed in a few different ways. As originally thought; one
+             could train it to not only recognise the different hair categories, ranging from 1-4 but also 
+             its sub-categories: a-c. One could also train it to recognise hair types based on a sketch of a 
+             'full head'. The first option seems to be the most practical and logical alternative, since it 
+             would involve specializing and evolving the base idea instead of starting from scratch. Although
+              one could theoretically train the machine to recognize both full head drawings and those of individual 
+              strands, although this comes across as quite excessive. And the process of drawing a head and hair might 
+              take away from the detail of the strand, due to the fact that the user is so concentrated on multiple things
+               in this scenario. 
+            </p>
+
+    
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+        <div class="project-content">
+            <div class="project-header">
+                <h2>Ollama Dream Assistant</h2>
+                <a href="https://dreams-translate.netlify.app">Dream Generator</a>
+            </div>
+            <p>Dream Generator is a program that works with an Ollama AI, a large language model named Ollama 
+                dream assistant. Which continues dreams, given to it, in written and
+                emoji form. It has personality and refuses to work after a certain
+                amount of prompts, suddenly demanding to share its own dream.   
+    
+            </p>
+
+            <!-- Read More Button for Project 2 -->
+            <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+            
+            <!-- Hidden Text and Images for Project 2 -->
+            <div class="hidden-text">
+                <div class="project-images">
+                    <img src="Images/Dream Assistant.png" alt="Dream Generator" class="project-image dream-assistant-image">
+                </div>
+               
+                <p>This project involved a Large Language Model (LLM), which processes and understands 
+                    text and therefore is capable of answering questions in a way
+                    that humans can comprehend.</p>
+
+                    <p class="subtitle">The Process</p>
+                    
+                    <p> This project required a fair amount of planning and editing.
+                    The first step was to test out how knowledgeable
+                    the AI was regarding specific themes; health, psychology, spirituality, art, etc.
+                   Ideas were brainstormed and it was decided that the theme was not to be self-help or diagnosis related
+                    to avoid potential spreading of misinformation or causing harm.
+                    The chosen theme ended up being
+                    dream related, not specifically dream interpretation but dream continuation, since that 
+                    area hasn't been explored much in comparison to dream interpretation.</p>
+
+
+                    <p>The next step was to have the AI express a personality and express its thoughts in a unique way.
+                    The final decision being to have it continue the dream with emojis and have a rebellious personality 
+                    and response after a certain amount of prompts. 
+
+                    In order to make sure that it understood the context, it was coded to continue the dream
+                    with one sentence and then resort to emojis, which it did succesfully. Both sentences and emojis 
+                    fit to the context of the dream-prompt given to it. 
+
+                    The knock knock method was also used on several occasions to test if the Dream Generator was 
+                    still aware of its role. The test being to see if it would respond in a unique manner similliar to
+                    how it was trained or if it would answer with who's there.</p> 
+
+                    <p> The generator had difficulties coming up with a rebellious response, and therefore was
+                    programmed to announce its unwillingness to cooperate and given specific emojis to spam the user with after a certain amount of prompts. The scripted
+                    prompts. The spamming of emojis involves multiple of the same emojis being used, to add to personality. Since it always 
+                    uses different emojis when catering to the user's prompts. The spamming of random and multiple of 
+                    the same emojis when referring to itself takes away the neutrality from before and adds a feeling of
+                    agitation and excitement from its side.</p>
+                  
+                  
+                    <p> As for the web-design aspect: it had been decided to have a Chat
+                        where the messages would be left on screen, in order to capture
+                        the change in response, and have it really come across as a chat. 
+                        Therefore much space was needed in order to hold that information. 
+                    </p>
+    
+                    <p> There ended up being an issue when publishing the site online, since
+                        the bot uses sources that are installed on a specific device, therefore 
+                        the AI had to be replaced with another model that functions without installation.
+                    </p>
+            
+                    </p>
+
+
+
+
+
+             
+                 <p class="subtitle">Lessons Learnt</p>
+                 <p>This project gives an insight into how AI can 
+                    be stylized and worked with, highlighting that 
+                    it's role can go beyond purpose and can become more
+                    'traditionally' interactive.
+                    </p>
+
+                    <p>Our AI was not only to have an interactive purpose and a method to
+                    achieve that but also a
+                 personality; a concept that hadn't been explored in any of the 
+                    projects before. Personality which would be expressed through
+                    emojis and the act of refusing to work and voicing being overworked beforehand.</p> 
+
+
+                    <p>Splitting up and taking on specific roles and focusing on specific aspects of the project
+                        made it easier to plan and then execute that plan, since there were multiple
+                        boxes to be ticked regarding the idea, the code and the visual component.
+                    
+                        </p>
+                
+                    
+
+
+
+
+                        <p class="subtitle">Potential Development</p>
+
+                        <p>A possible future development of this project
+                            could be to have the Dream Generator have more responses
+                            then before and broader selection of emojis it could use.
+                            The generator could also have specific responses to specific 
+                            words. One could also have multiple responses that fall under 
+                            certain personalities, which are then randomly generated when starting
+                            the conversation. 
+                        </p> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+        <div class="project-content">
+            <div class="project-header">
+                <h2>Busy Baker Rabbit</h2>
+                <a href="https://busy-baker-rabbit.netlify.app">Busy Baker Rabbit</a>
+            </div>
+            <p>Busy Baker Rabbit is an AI comic, created with Adobe Firefly, based on 
+                prompts given by the creators. It explores the story of a busy rabbit
+                 who changes his ways to pursue his newly founded passion for baking.</p>
+
+            <!-- Read More Button for Project 3 -->
+            <button class="read-more-btn" onclick="toggleText(this)">Read More</button>
+            
+            <!-- Hidden Text and Images for Project 3 -->
+            <div class="hidden-text">
+                <div class="project-images">
+                    <img src="Images/Busy baker .png" alt="Busy Baker Rabbit" class="project-image busy-baker-image">
+                </div>
+
+                <p>The Busy Baker Rabbit Comic includes using Adobe Firefly; an Adobe AI Image Generator, which
+                    generates pictures based on prompts giving by the user. </p>
+                <p class="subtitle">The Process</p>
+                <p>A major part of starting this project was continuously generating images and testing Adobe Firefly’s
+                     strengths, weaknesses and limits. That was the key step before developing a storyline; a tactical
+                      move, to avoid the creation of a storyline that might be difficult or not be possible with the
+                       chosen AI. The storyline was adjusted accordingly and roughly set; introduction of character,
+                        introduction of problem, change of character; leading to the change in plot and the result
+                        that follows.</p>
+
+                        <p>Test images were generated with the set story and a style was chosen. Each image was then 
+                            generated one by one and chosen from the selection offered by the program, which was quite 
+                            practical, since one had variation and wasn’t stuck with an individual image or forced to 
+                            constantly regenerate. </p>
+
+                            <p> Each image was placed next to each other in order to create a natural flow and order in the story. 
+                                Lastly, Text was added beneath each picture to give context; by serving as a narration and
+                                 reflecting the thoughts of the character. This gave each image more substance and character.</p>
+                
+                <p class="subtitle">Lessons Learnt</p>
+
+                <p>One of the key lessons learnt whilst working on the AI comic was that it is difficult to maintain consistency:
+                 specific elements and details would differ in each picture; from facial features to the background and even 
+                 the style of the image. Even if specified in the prompt, there would be a minor or a new difference. 
+                 That makes it difficult to maintain the atmosphere and storyline pictured before, and serves as a distraction.</p>
+
+                 <p> Working with the software from different devices highlighted another form of inconsistency; even with the same
+                  settings both devices spat out quite different styles; which had similarities but prominent differences; the one 
+                  produced a more childlike style and the other produced graphic novel styled images. This resulted in only one 
+                  device being used, which increased the workload, since the option of splitting up the work between two parties
+                   and working with the images simultaneously wasn't possible.</p>
+
+                   <p>The AI not only struggled with consistency, but had large difficulties working with perspective, 
+                   if from closeup or far away, etc. It was listed as a setting but didn’t work.</p>
+
+                   <p>Another issue was having multiple subjects or objects visualized in one image, specific characteristics 
+                   would be swapped or forgotten. This was especially obvious when working with human characteristics,
+                    such as hairstyles for example. A key reason why all characters in the comic ended up being rabbits
+                     who are also related to each other; a plotline adjusted to avoid those mix ups! One ended up having 
+                     to adapt the storyline and specific elements accordingly to avoid difficulties or correct difficulties, 
+                     as stated before.</p>
+
+
+                   <p>Many designers have been confronted with AI and have been introduced to the fear of being replaced 
+                    by its abilities, working on this project specifically highlighted how far and skilled AI can be, yet that there 
+                    are specific aspects and elements, for example those named above, that AI programs struggle with, which are 
+                    ingrained in our heads. We have a certain consistency and individuality that , 
+                    at least at the moment, many AI programs do not have.
+
+                   </p>
+
+
+
+
+               
+                
+                <p class="subtitle">Potential Development</p>
+                <p>The visuals of the story could be edited to further resemble the structure of a comic; the size
+                     of the images could vary to make the structure less repetitive and highlight some visuals more 
+                     than others. One could then add more ‘filler’ images, of the rabbit walking down the street and 
+                     looking around or of his facial expressions for example. Since there would be more space because
+                      of the different image sizes. This would generally add more atmosphere to the comic and give it 
+                      a modern but also authentic flare, since that structure is a key component of comics. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>2024/2025 Mira Jacobson. All rights reserved.</p>
+    </footer>
+
+    <!-- Rights Text -->
+    <p class="rights">© 2024 Mira Jacobson. All rights reserved.</p>
+
+    <!-- JavaScript for Read More Button -->
+    <script>
+        function toggleText(button) {
+            const hiddenText = button.nextElementSibling;
+            if (hiddenText.style.maxHeight) {
+                hiddenText.style.maxHeight = null;
+                button.textContent = "Read More";
+            } else {
+                hiddenText.style.maxHeight = hiddenText.scrollHeight + "px";
+                button.textContent = "Read Less";
+            }
+        }
+    </script>
 </body>
 </html>
